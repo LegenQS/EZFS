@@ -17,6 +17,7 @@ The ezfs code is organized into several files. The header files are:
   - `ezfs_super_block`: a structure that represents the superblock, which contains information about the file system, such as the version, magic number, and free inodes and data blocks.  
   The header file also defines various constants, including the block size, maximum number of inodes, and root inode number. Additionally, it includes macros for setting, testing, and clearing bit arrays of integers.
 - `ezfs_ops.h`: This header file contains function declarations related to operating on EZFS filesystem inodes and directory entries. Specifically, it defines the `ezfs_get_inode` function which returns an inode struct given a superblock and inode number, and the `ezfs_find_entry` function which searches for a directory entry given a parent directory inode and child name.
+- `format_disk_as_ezfs.c`: Skeleton code for a formatting utility program
 - `myez.c`: This file implements all the functionalities for the file system to mount/umount, make modifications to files etc..
 
 ## Code Explanation
